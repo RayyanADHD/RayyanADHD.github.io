@@ -1,0 +1,315 @@
+nav{
+    background-color:lightblue;
+    color:black;
+    
+    font-size: 20px;
+    text-align:center;
+}
+h1{
+    text-align:center;
+
+}
+.hero-image {
+  position: relative;
+  height: 300px;
+  background-color: #000;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0e8e8;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+#blue-btn:hover{
+  background-color: rgb(47, 106, 188);
+}
+#green-btn:hover{
+  background-color: #2ecc40;
+}
+#purple-btn:hover{
+  background-color: purple;
+}
+
+#no:hover{
+  background-color: red;
+}
+#yes:hover{
+  background-color: green;
+}
+.blue {
+  background-color: rgb(47, 106, 188);
+  
+  
+}
+
+.green {
+  background-color: #2ecc40;
+  
+}
+
+.purple {
+  background-color: purple;
+  
+}
+.intro{
+    text-align:center;
+    background-color: yellow;
+    border: 2px solid red;
+    border-radius:25px;
+    margin-top:5px;
+    margin-bottom: 10px;
+    
+    
+}
+.gallery{
+    display:flex;
+    background-color: beige;
+    border-radius:20px;
+    border: 3px solid rgb(160, 3, 45);
+    margin-bottom:10px;
+    
+    
+    
+    justify-content: space-between;
+    
+}
+h2,h3,h4{ /*Multiple Selector*/
+    font-size:30px;
+    text-align: center;
+}
+.pic1,.pic2,.pic3{ /*Multiple Selector*/
+    padding:2px;
+    border:5px solid black;
+    margin: 75px;
+}
+.main{
+    grid-gap:5px;
+    display:grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 0;
+    
+    
+}
+.about{
+    background-color: aqua;
+    border-radius:20px;
+    border:5px solid papayawhip;
+    font-style: oblique;
+}
+.list{
+    background-color: cornflowerblue;
+    border-radius:20px;
+    border:5px solid papayawhip;
+    font-style: oblique;
+}
+.a{
+    list-style-type: square;
+}
+.link1,.link2,.link3{ /*Multiple Selector*/
+    color:red;
+}
+  
+  /*Form editing*/
+  form{
+    margin-top: -470px;
+    
+    width: 100%;
+    
+    
+  }
+  input[type=text], input[type=email], select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+ }
+ input[type=submit] {
+    width: 100%;
+    background-color: #09f;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    
+ }
+ textarea{
+  width:100%;
+  background-color: lightgray;
+  border: 3px dashed black;
+
+ }
+
+  /*Universal Selector*/
+  *{
+    font-style:normal;
+  }
+
+  div > p{ /*Child Selector */
+    font-size:25px;
+  }
+
+ li.select+li{ /* Adjacent Sibling Selector */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ h1 ~ p{ /*Sibling Selector */
+    color:red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+  [class="main"]{ /*Attribute Selector*/
+    color:white;
+  }
+
+  ul::first-line{ /*Psuedo element selector*/
+    font-style: italic;
+  }
+
+  /*Mobile Layout*/
+  @media only screen and (max-width: 768px) {
+    
+    textarea{
+      background-color: lightgreen;
+      border: 3px rgb(72, 255, 0) dotted;
+    }
+    .hero-image{
+      
+      opacity:0.75;
+    }
+    .hero-text{
+      font-size: 10px;
+    }
+    
+    .gallery{
+      flex-direction: column;
+      align-items: center;
+    }
+    .main{
+      display: block;
+    }
+    .about{
+     
+      margin-bottom: 20px;
+     
+      
+    }
+    .list{
+      margin-top:20px;
+    }
+    .uae,.oman{
+      margin-right:5px;
+      width:100%;
+    }
+   form{
+    display: inline-block;
+    margin-top: 5px;
+   }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+   
+
+
+    textarea{
+      background-color: lightcoral;
+      border: 3px blue solid;
+    }
+
+    .hero-image{
+      height: 200px;
+      opacity:0.75;
+      
+    }
+    .hero-text{
+      font-size: 15px;
+    }
+
+
+    .gallery{
+      display: flex;
+      flex-wrap:wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      height:1000px;
+      position: relative;
+      
+    }
+    .gallery img{
+      flex-basis:30%;
+      height:400px;
+      margin:10px;
+    }
+    
+    .gallery .pic3{
+      display:block;
+      margin:0 auto;
+
+    }
+    
+  
+    .main{
+      display: block;
+    }
+    .about{
+     
+      margin-bottom: 20px;
+     
+      
+    }
+    .list{
+      margin-top:20px;
+    }
+   form{
+    display: inline-block;
+    margin-top: 5px;
+   }
+   .list img{
+    display: inline-block;
+    height: auto;
+    width: 50%;
+   }
+  }
+  
+
+    
+  
+      
+
+    
+      
+      
+      
+  
+
+   
+  

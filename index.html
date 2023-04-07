@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rayyan Azher's website</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link href="rayyan logo.png" rel="icon" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    </head>
+    <header>
+        <nav>
+       
+            <a href="index.html">Homepage</a>&nbsp;  <a href="educational.html">Education</a>&nbsp; <a href="hobbies.html">Hobbies</a>
+                     
+            
+        </nav>
+    </header>
+    <body>
+        <div class="hero-image">
+            <img src="emirates.png" alt="hero image">
+            <div class="hero-text">
+              <h1>Rayyan Azher Miswani here!</h1>
+              <p><strong>There isn't any shame in being weak, the shame is in staying weak. ~ Fuegoleon Vermillion.</strong> </p>
+            </div>
+          </div>
+        <p style="font-size: 15px; font-family: 'Courier New', Courier, monospace;"><strong>Want to switch it up!Click on any of the colors to change your mood</strong></p>
+        <div class="buttons"></div>
+            <button id="blue-btn">Blue</button>
+            <button id="green-btn">Green</button>
+            <button id="purple-btn">Purple</button>
+        </div>
+        <div class="intro">
+        <h1><u>Welcome to Rayyan Azher's Website</u></h1>
+        <p>This is my Homepage.<br>I have made this website to let you all know about myself.
+        </p>
+    </div>
+    <h2><u>My Gallery</u></h2>
+    <div class="gallery">
+        
+        <img src="Mypic 1.png" class="pic1" alt="My pic 1" length="300" width="300"> <img src="Mypic2.png" class="pic2" alt="My pic 2" height="400" width="300">
+        <img src="mypic 3.png" class="pic3" alt="My pic 3" length="300" width="300">
+    </div>
+    <div class="main">
+        <div class="about">
+        <h3>Who am I?</h3>
+        
+        
+        <p>My full name is <stron>Rayyan Azher Miswani</stron> and I am currently a Dalhousie University student in my 
+        first year of Bachelor's in Computer Science.
+        <br>I am a proud Indian born in Lucknow on <mark>16th January 2005</mark>.I have lived my life in various places including
+         <u>UAE</u> and <u>Oman</u>.</p>
+        
+        <img src="uae.jpg" class="uae" alt="UAE" length="400" width="400"> <img src="oman.webp" class="oman" alt="Oman" height="250" length="400" width="400">
+    </div>
+
+    <div class="list">
+        <h4>My Interests:</h4>
+        <ul class="a">
+            <li>I am a huge football fan and my favorite team is the <a class="link1" href="https://www.arsenal.com/">Mighty Arsenal.</a> </li>
+                <p>Do you like Arsenal?</p>
+                <button id="yes" onclick="display(true)">Yes</button>
+                <button id="no"  onclick="display(false)">No</button>
+                <p id="mcq" style="display: none;">Did you know?Arsenal are the only team in top flight English History to win the league unbeaten.BE PROUD AS AN ARSENAL FAN!</p>
+            <li>My favorite movie ever is Get Out.</li>
+            <li>My favorite musicians are <a class="link1" href="https://www.instagram.com/chaseatlantic/?hl=en">Chase Atlantic</a> and 
+            <a class="link1" href="https://www.arianagrande.com/">Ariana Grande.</a></li>
+            <li>My dream country to visit is Japan and Switzerland.</li>
+
+        </ul>
+    </div>
+    </div>
+    <form id="myform" onsubmit="formsubmit()" method="post" >
+    <p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fullname">
+     </p>
+     <p>
+        <label for="Dal mail">Dal mail:</label>
+        <input type="email" id="Dal mail" name="Dal mail" value="@dal.ca">
+     </p>
+     <p>
+        <label for="year">College Year</label>
+        <select id="year" name="year">
+          <option>First</option>
+          <option>Second</option>
+          <option>Third</option>  
+          <option>Forth</option>      
+        </select>
+     </p>
+     <p>
+        <label for="residence">Residence</label>
+        <select id="residence" name="residence" onsubmit="print()">
+          <option>Shirreff</option>
+          <option>Howe</option>
+          <option>Risley</option>  
+          <option>Gerard</option>      
+          <option>LeMerchant</option>
+          <option>None</option>
+        </select>
+     </p>
+     <p>
+        
+        <textarea type="text" id="feedback" name="feedback" placeholder="Feedback for website" rows="5" cols="50"></textarea>
+     </p>
+    
+     <input type="submit" value="Submit">
+  </form>
+    
+    
+    
+        <p><strong>Make sure to follow me and let us connect together!</strong></p>
+        
+            <a href="https://www.instagram.com/_bristol_boy/" ><img  src="isnta.webp" alt="instagram" id="insta-icon" length="80" width="90"></a>
+            <a href="https://twitter.com/Bristol_boy_69"><img src="twitter.png" alt="twitter" id="twitter-icon" length="80" width="90"></a>
+            <a href="https://www.linkedin.com/in/rayyan-azher-944590260/"><img src="linkeldn.jpg" alt="linkedin" id="linkeldn-icon" length="100" width="110"></a>
+        
+    </body>
+
+    <script>
+        const instaicon = document.getElementById("insta-icon");
+        instaicon.addEventListener("click",function(event){
+        
+            event.preventDefault();
+            const confirmation = window.confirm("Do you want to navigate to my Instagram page?");
+            if (confirmation){
+                window.location.href="https://www.instagram.com/_bristol_boy/";
+            }
+        });
+        const twittericon = document.getElementById("twitter-icon");
+        twittericon.addEventListener("click",function(event){
+        
+            event.preventDefault();
+            const confirmation = window.confirm("Do you want to navigate to my Twitter page?");
+            if (confirmation){
+                window.location.href="https://twitter.com/Bristol_boy_69";
+            }
+        });
+        const linkeldnicon = document.getElementById("linkeldn-icon");
+        linkeldnicon.addEventListener("click",function(event){
+        
+            event.preventDefault();
+            const confirmation = window.confirm("Do you want to navigate to my Linkedin page?");
+            if (confirmation){
+                window.location.href="https://www.linkedin.com/in/rayyan-azher-944590260/";
+            }
+        });
+        
+        
+    </script>
+    <script src="script.js"></script>
+    
+    
+
+</html>

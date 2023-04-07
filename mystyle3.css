@@ -1,0 +1,86 @@
+/*Editing table*/
+table, th, td { /*Multiple Selector*/
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td{
+    background-color: aqua;
+    padding:10px;
+    width:40%;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  #gray-btn:hover{
+    background-color: gray;
+  }
+  #black-btn:hover{
+    background-color: #000000;
+    color:white;
+  }
+  #brown-btn:hover{
+    background-color: brown;
+  }
+  
+  .gray {
+    background-color: rgb(94, 92, 92);
+    
+  }
+  .black {
+    background-color: #111011;
+    
+  }
+  .brown {
+    background-color: brown;
+    
+  }
+  @media only screen and (max-width: 768px) {
+    *{
+      color:rgb(4, 8, 110);
+    }
+    table, th, td { 
+        border: 1px dashed rgb(206, 14, 14);
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td{
+        background-color: rgb(34, 214, 43);
+        padding:10px;
+        width:20%;
+    }
+
+}  
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+    *{
+      color:rgb(6, 97, 62);
+    }
+    table, th, td { 
+        border: 1px dotted rgb(139, 5, 112);
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      td{
+        background-color: rgb(208, 222, 18);
+        padding:10px;
+        width:40%;
+    }
+}

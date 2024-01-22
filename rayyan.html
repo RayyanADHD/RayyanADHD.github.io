@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href = "style.css">
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan Azher's website</title>
+    <script src="https://kit.fontawesome.com/1cd08c634c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hello there,I am <span>Rayyan</span><br> Azher From India</h1>
+            </div>
+        </div>
+
+    </div>
+   <!-----------------about--------------------- -->
+    <div id="about">
+        <div class="container"> 
+            <div class="row">
+                <div class="about-col-1">
+                    <img src= "images/IMG_3646.jpg" class="image1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my corner of the web! I'm Rayyan Azher, a passionate Computer Science student embracing the world of algorithms and code finding joy in unraveling the complexities of technology.
+                        Driven by curiosity, I dive into the realms of software development, problem-solving, and the ever-evolving landscape of computer science. 
+                        Beyond the screen, I am a fervent learner, always seeking to expand my knowledge and skills.
+                        Join me on this digital journey as I share my experiences, projects, and insights from the fascinating world of bits and bytes. Let's code the future together!</p>
+
+                        <div class="tab-titles">
+                          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                          <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                          <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Computer Language Proficiency:</span><br>Strong command of programming languages such as <strong>Java, Python, and C++.</strong> Whether it's crafting elegant algorithms or developing robust applications, these languages are my tools of choice.</li>
+                                <li><span>Web Development:</span><br>Keen interest in crafting engaging and user-friendly web experiences, I leverage my skills in <strong>HTML, CSS, and JavaScript.</strong> From building responsive layouts to adding interactive features, I enjoy bringing ideas to life on the web.</li>
+                                <li><span>Database Management:</span><br>Well-versed in relational databases like <strong>MySQL, MongoDB.</strong> Whether it's designing efficient schemas or ensuring data integrity, I have experience in managing & optimizing databases to support robust & scalable applications.</li>
+                                <li><span>Development Tools:</span><br>Experienced with popular development environments such as <strong>Visual Studio Code, IntelliJ IDEA, and IDLE.</strong> I have used these tools extensively for coding, debugging, and software development projects during my coursework and personal coding practice.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span><h3>Dairy Associate</h3></span>
+                                    <p>Walmart 3021, Halifax, Nova Scotia</p>
+                                    <p><u>Duration:</u> 09/2023 - 12/2023</p>
+                                    <ul>
+                                        <li>• Utilized automated inventory tracking systems to manage dairy product inventory efficiently, enhancing inventory accuracy and streamlining restocking procedures.</li>
+                                        <li>• Demonstrated exceptional customer service by assisting shoppers and strengthened interpersonal and communication skills while fostering positive customer interactions.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span><h3>Data Entry Operator</h3></span>
+                                    <p>Alpine Travels,Dubai,UAE</p>
+                                    <p><u>Duration:</u> 06/2023 - 08/2023</p>
+                                    <ul>
+                                        <li>• Developed and implemented an efficient filing system that reduced paperwork processing time by a huge significane and increased data accessibility for the team.</li>
+                                        <li>• Generated and delivered daily reports using database software, meeting 100% of management's requests for data, ensuring smooth operations.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span><h3>Cashier</h3></span>
+                                    <p>Waitrose,Dubai,UAE</p>
+                                    <p><u>Duration:</u> 06/2022 - 08/2022</p>
+                                    <ul>
+                                        <li>• Enhanced inventory management by tracking product stock levels, identifying low-stock items, and promptly ordering supplies as needed, resulting in a considerable reduction in stockouts.</li>
+                                        <li>• Managed cash transactions with 100% accuracy, including counting cash, processing payments, and providing change promptly.</li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span><h3>Indian High School</h3></span>
+                                    <p>Dubai,UAE</p>
+                                    <p>Graduated in June 2022</p>
+                                    
+                                </li>
+                                <li>
+                                    <span><h3>Dalhousie University</h3></span>
+                                    <p>Halifax,NS,Canada</p>
+                                    <p>Bachelor of Computer Science:2<sup>nd</sup> year</p>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------projects-------------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Database Management Systems</h2>
+                    <p>Developed multiple database management systems for practical, day-to-day applications, utilizing Python, MySQL, and Tkinter. Designed and implemented user-friendly interfaces for seamless data interaction.
+                     Achieved significant improvements in data organization and accessibility. </p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Object Oriented Programming</h2>
+                    <p>Developed multiple database management systems for practical, day-to-day applications, utilizing Python, MySQL, and Tkinter. Designed and implemented user-friendly interfaces for seamless data interaction.
+                     Achieved significant improvements in data organization and accessibility. </p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-people-group"></i>
+                    <h2>Public API's</h2>
+                    <p>Created a website of the top 3 leagues in football using HTML,CSS,Javascript & React.Installed chatbox using CHATGPT's public API and
+                        also fetched information from other public APIs.We also use PHP & MYSQL to create sign up accounts etc. </p>
+                     <a href="#">Learn more</a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ---------------- ----hobbies-------------------------------------- -->
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">My Hobbies</h1>
+            <div class="hobbies-list">
+                <div class="hobby">
+                    <img src="images/hobby1.png">
+                    <div class="layer">
+                        <a href="#hobbies"><i class="fa-solid fa-gear"></i></a>
+                        <h3>Adventure Crafting</h3>
+                        <p>I love creating day to day items using basic materials and applying different concepts I have learnt throughout my life.
+                            I've brought garbage bags to life as parachutes, transformed cloth pins into catapults for exciting launches
+                             and conceptualized a visionary three-wheeled electric car etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="images/hobby2.jpg">
+                    <div class="layer">
+                    <a href="#hobbies"><i class="fa-solid fa-futbol"></i></a>
+                    <h3>Football</h3>
+                    <p>
+                        From school teams to leading my own team, football has been a constant thread in my life as I enjoy every moment on the pitch, guiding my team & pushing forward to win every challenge put through.
+                    </p>
+                </div>
+                </div>
+                <div class="hobby">
+                    <img src="images/hobby3.jpg">
+                    <div class="layer">
+                        <a href="#hobbies"><i class="fa-solid fa-golf-ball-tee"></i></a>
+                        <h3>Outing</h3>
+                        <p>
+                            I also love to spend my time outside whether be it playing golf,bowling,going to the arcade or the theatres.I love to spend time outside with the closest of my friends as it creates core and unforgettable memories.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------contact----------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> rayyanazher25@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 902-448-7782</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_bristol_boy/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/Bristol_boy_69"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/rayyan-azher-944590260/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn2" class>Download Resume</a>
+                </div>
+               
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;Rayyan.Made with <i class="fa-solid fa-heart"></i> by using W3S Schools </p>
+        </div>
+
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxQ77n4KIWtBPlQawIDXXXjUYAXOyf758m6m6QOmZC8r55EfWSR1z3PPC04bhTUZZ9V/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+ 
+</html>
